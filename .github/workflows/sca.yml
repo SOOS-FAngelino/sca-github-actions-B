@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+  soos-sca-analysis:
+    name: SOOS SCA Scan
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v4
+      with:
+          node-version: '22.17.0'
+    - name: Run SOOS Scan
+      uses: soos-io/soos-sca-github-action@v2
+      with:
+        client_id: ${{ secrets.SOOS_QA_CLIENT_ID }}
+        api_key: ${{ secrets.SOOS__QA_API_KEY }}
+        project_name: "sca-githubActions-B"
+        api_url: 'https://qa-api.soos.io/api/'
+        sca_version: 4.2.1-pre.1
