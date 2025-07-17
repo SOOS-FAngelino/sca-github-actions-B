@@ -11,7 +11,7 @@ jobs:
       with:
         client_id: ${{ secrets.SOOS_QA_CLIENT_ID }}
         api_key: ${{ secrets.SOOS__QA_API_KEY }}
-        project_name: "sca-githubActions-B"
+        project_name: "sca-githubActions"
         api_url: 'https://qa-api.soos.io/api/'
         #sca_version: 4.2.1-pre.1
 
