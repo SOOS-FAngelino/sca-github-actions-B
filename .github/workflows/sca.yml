@@ -11,7 +11,7 @@ jobs:
     - uses: actions/setup-node@v4
       with:
           node-version: '20.17.0'
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
     - name: Run SOOS Scan
       uses: soos-io/soos-sca-github-action@5d0c97061362053846bc31080c4f4634f5c53fbd
       with:
