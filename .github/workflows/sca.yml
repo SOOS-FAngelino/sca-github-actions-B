@@ -13,13 +13,13 @@ jobs:
           node-version: '20.17.0'
     - uses: actions/checkout@main
     - name: Run SOOS Scan
-      uses: soos-io/soos-sca-github-action@5d0c97061362053846bc31080c4f4634f5c53fbd
+      uses: soos-io/soos-sca-github-action@v2
       with:
         client_id: ${{ secrets.SOOS_QA_CLIENT_ID }}
         api_key: ${{ secrets.SOOS__QA_API_KEY }}
         project_name: "sca-githubActions-B-2"
         api_url: 'https://qa-api.soos.io/api/'
-        sca_version: 4.2.1-pre.1
+        #sca_version: 4.2.1-pre.1
         export_format: "sarif"
         export_file_type: "json"
     - name: Find and rename SARIF file since it is unique
