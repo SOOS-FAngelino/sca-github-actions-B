@@ -17,8 +17,8 @@ jobs:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
           #api_url: "https://qa-api.soos.io/api/"
-          #sca_version: 4.2.1-pre.1
-          project_name: "sca-github-actions-B"
+          sca_version: 4.2.4-pre.2
+          project_name: "sca-gha-20"
           export_format: "sarif"
           export_file_type: "json"
       - uses: actions/upload-artifact@v4
