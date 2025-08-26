@@ -14,9 +14,9 @@ jobs:
       - name: Run SOOS SCA Analysis
         uses: soos-io/soos-sca-github-action@v2
         with:
-          client_id: ${{ secrets.SOOS_CLIENT_ID }}
-          api_key: ${{ secrets.SOOS_API_KEY }}
-          #api_url: "https://qa-api.soos.io/api/"
+          client_id: ${{ secrets.QA_SOOS_CLIENT_ID }}
+          api_key: ${{ secrets.QA_SOOS_API_KEY }}
+          api_url: "https://qa-api.soos.io/api/"
           sca_version: 4.2.4-pre.2
           project_name: "sca-gha-20"
           export_format: "sarif"
