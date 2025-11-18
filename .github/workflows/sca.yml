@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run SOOS SCA Analysis
-        uses: soos-io/soos-sca-github-action@v2
+        uses: soos-io/soos-sca-github-action@1da7e6848826401b7637a3ed85f20c33348e25d8
         with:
           client_id: ${{ secrets.QA_SOOS_CLIENT_ID }}
           api_key: ${{ secrets.QA_SOOS_API_KEY }}
